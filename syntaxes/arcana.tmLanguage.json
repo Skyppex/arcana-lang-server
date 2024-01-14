@@ -1,0 +1,43 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Arcana",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.arcana",
+				"match": "\\b(if|else|loop|while|for|return|struct|union)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.arcana",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.arcana",
+					"match": "\\\\."
+				}
+			]
+		},
+		"chars": {
+			"name": "char.quoted.single.arcana",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.arcana",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.ar"
+}

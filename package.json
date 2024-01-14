@@ -1,0 +1,25 @@
+{
+  "name": "arcana",
+  "displayName": "Arcana",
+  "description": "Syntax highlighting for arcana",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "arcana",
+      "aliases": ["Arcana", "arcana"],
+      "extensions": [".ar"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "arcana",
+      "scopeName": "source.ar",
+      "path": "./syntaxes/arcana.tmLanguage.json"
+    }]
+  }
+}
